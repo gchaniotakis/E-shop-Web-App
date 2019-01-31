@@ -81,6 +81,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\ApplicationDbContext.cs" />
+    <Compile Include="Migrations\201901311657316_Initial.cs" />
+    <Compile Include="Migrations\201901311657316_Initial.Designer.cs">
+      <DependentUpon>201901311657316_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\UserRoles.cs" />
@@ -96,6 +101,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201901311657316_Initial.resx">
+      <DependentUpon>201901311657316_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
