@@ -19,9 +19,9 @@ namespace eshopapp.Controllers
             return View();
         }
 
-        public ActionResult InsertUser(string name)
+        public string InsertUser(string name, string username, string password)
         {
-            return View(name);
+            return name + " " + username + " " + password;
         }
     }
 }
