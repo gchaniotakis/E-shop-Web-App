@@ -8,10 +8,20 @@ namespace eshopapp.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        
         public ActionResult HomeView()
         {
             return View();
+        }
+
+        public ActionResult NewUser()
+        {
+            return View();
+        }
+
+        public ActionResult InsertUser(string name)
+        {
+            return View(name);
         }
     }
 }
